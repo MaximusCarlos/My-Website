@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="MaximusCarlos, Maximus, Carlos, Maximus Carlos, Developer, Java, HTML, Best, Maximus Carlos, bukkit, spigot, minecraft">
+    <meta name="author" content="Maximus Carlos">
+    <meta property="og:site_name" property="MaximusCarlos"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Maximus Carlos"/>
+    <meta property="og:description" content="Computer Science student, professional bukkit/spigot and web development."/>
+    <meta property="og:image" content="https://puu.sh/vj8WX/8c4903106e.jpg">
+    <title>Maximus | Home</title>
+    <link rel="icon" href="./img/maximuscarlos_logo.png">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+
+  <body>
+    <header>
+    <div class="container">
+        <nav>
+          <ul>
+            <li class="current"><a href="http://www.maximuscarlos.xyz">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="./pages/contact">Contact</a></li>
+           <li><a href="http://share.maximuscarlos.xyz">Project Send</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="showcase">
+      <div class="layer">
+      </div>
+      <div class="container">
+        <h1>Maximus Carlos</h1>
+        <p>I code | I run ☺</p>
+      </div>
+    </section>
+
+    <section id="boxes">
+      <div class="container">
+        <div class="box">
+          <a href="https://dev.bukkit.org/members/MaximusCarlos" target="_blank"><img id="left" src="./img/Bukkit_logo.png"></a>
+        </div>
+        <div class="box">
+          <a href="https://github.com/MaximusCarlos" target="_blank"><img id="center" src="./img/GitHub_logo.png"></a>
+        </div>
+        <div class="box">
+          <a href="https://www.spigotmc.org/members/maximuscarlos.371811/" target="_blank"><img id="right" src="./img/Spigot_logo.png"></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <a name="about"></a><h1>About</h1>
+        <p>Hi! I’m a high school student studying Computer Science and Marketing. I also love running! On the other hand, I currently take in work such as bukkit/spigot plugin development, plugin maintenance as well as web design and development.<br><br>*Minecraft</p>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <a name="services"></a><h1>Services</h1>
+        <p>Interested in any of my services? Please take note. I currently take in work such as:</p>
+        <ul>
+          <li>» Bukkit/spigot plugin development.</li>
+          <li>» Plugin maintenance (includes updating plugins to the newest version)</li>
+        </ul>
+        <p id="last"><br>I'm not strict on payments, just be reasonable with me.</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>Developed and maintained by &copy; 2017, Maximus Carlos. All Rights Reserved | <a href="./pages/contact"><b>Contact Email:</b></a> contact@maximuscarlos.xyz<br></p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	  <script>
+		  $(document).ready(function(){
+		    $('a[href*=#]').click(function() {
+			  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+			  && location.hostname == this.hostname) {
+			    var $target = $(this.hash);
+			    $target = $target.length && $target
+			    || $('[name=' + this.hash.slice(1) +']');
+			    if ($target.length) {
+				  var targetOffset = $target.offset().top;
+				  $('html,body')
+				  .animate({scrollTop: targetOffset}, 1000);
+			     return false;
+			    }
+			  }
+		    });
+		  });
+	  </script>
+  </body>
+</html>

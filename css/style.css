@@ -1,0 +1,336 @@
+body{
+  font-family Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+}
+/*Global*/
+.container{
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+nav ul{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  list-style-type: none;
+}
+header nav{
+  margin-top: 10px;
+}
+/*Header*/
+header{
+  background: #ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+header li{
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+header a{
+  color: #7f7f7f;
+  text-decoration: none;
+  font-family: "Open Sans";
+  font-size: 17px;
+  position: relative;
+}
+header a:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+header a:hover:before{
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+header .highlight, header .current a{
+  color: #000000;
+}
+header a:hover{
+  color: #cccccc;
+  font-weight: bold;
+}
+footer a{
+  color: #ffffff;
+  text-decoration: none;
+}
+footer{
+  padding: 20px;
+  color: #ffffff;
+  text-align: center;
+  background:url('../img/body.gif') repeat;
+}
+/*GLOBAL ENDS HERE*/
+/*Showcase*/
+#showcase{
+  min-height: 660px;
+  background:url('../img/showcase.jpg') no-repeat 0 -260px;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  color: #ffffff;
+}
+.layer {
+    background-color: rgba(71, 79, 128, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#showcase h1{
+  margin-top: 250px;
+  font-size: 72px;
+  margin-bottom: 10px;
+  z-index: 30;
+  position: relative;
+  font-family: "Open Sans";
+}
+#showcase p{
+  z-index: 30;
+  position: relative;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 6px;
+  font-family: "Raleway";
+}
+/*Sidebar*/
+section#sidebar input, section#sidebar textarea{
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: 20px;
+}
+section#sidebar div label{
+  margin-left: 30%;
+  font-size: 15px;
+  font-family: "Open Sans";
+  color: rgb(51, 51, 51);
+  line-height: 1.4;
+}
+section#sidebar textarea{
+  max-height: 125px;
+  min-height: 125px;
+  max-width: 40%;
+  min-width: 40%;
+  border: #000000 solid 1px;
+}
+section#sidebar div input{
+  border: #000000 solid 1px;
+  height: 30px;
+}
+/*Sidebar*/
+section#sidebar{
+  width: 100%;
+}
+.button_1 {
+  background: #808080;
+  background-image: -webkit-linear-gradient(top, #808080, #808080);
+  background-image: -moz-linear-gradient(top, #808080, #808080);
+  background-image: -ms-linear-gradient(top, #808080, #808080);
+  background-image: -o-linear-gradient(top, #808080, #808080);
+  background-image: linear-gradient(to bottom, #808080, #808080);
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: Courier New;
+  color: #ffffff;
+  border: solid #808080 2px;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 20px;
+}
+.button_1:hover {
+  background: #4f4f4f;
+  background-image: -webkit-linear-gradient(top, #4f4f4f, #4d4d4d);
+  background-image: -moz-linear-gradient(top, #4f4f4f, #4d4d4d);
+  background-image: -ms-linear-gradient(top, #4f4f4f, #4d4d4d);
+  background-image: -o-linear-gradient(top, #4f4f4f, #4d4d4d);
+  background-image: linear-gradient(to bottom, #4f4f4f, #4d4d4d);
+  text-decoration: none;
+}
+/*Main-Col*/
+.dark_sidebar_contact{
+  padding: 15px;
+  margin-bottom: 50px;
+  min-height: 400px;
+}
+#askBelow{
+  position: relative;
+}
+#askBelow h1{
+  margin-top: 120px;
+  color: rgb(51, 51, 51);
+  text-align: center;
+  font-family: "Open Sans";
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 27px;
+}
+#askBelow p{
+  text-align: center;
+  font-family: "Open Sans";
+}
+/*Boxes*/
+#boxes{
+
+}
+#boxes .box{
+  margin-top: 70px;
+  margin-bottom: 70px;
+  float: left;
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+}
+#boxes .box img#left{
+  margin-top: 40px;
+  margin-left: 70%;
+  width: 120px;
+}
+#boxes .box img#right{
+  margin-top: 45px;
+  margin-right: 22%;
+  width: 140px;
+}
+#boxes .box img#center{
+  margin-left: 23%;
+  width: 220px;
+}
+#tos{
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 40px;
+  background-color: #f4f4f4;
+  padding: 20px;
+
+}
+#tos h1{
+  margin-top: 110px;
+}
+
+#alerts{
+  position: relative;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 40px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+}
+#alerts h1{
+  margin-top: 110px;
+}
+section#about{
+  background-color: #f4f4f4;
+  width: 100%;
+  text-align: center;
+}
+section#about h1{
+  padding-top: 40px;
+  font-family: "Open Sans";
+  font-weight: normal;
+  text-transform: uppercase;
+}
+section#about p{
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-bottom: 40px;
+  font-size: 14px;
+  font-family: "Open Sans";
+  letter-spacing: 1.2px;
+}
+section#services{
+  width: 100%;
+  text-align: center;
+}
+section#services h1{
+  padding-top: 40px;
+  font-family: "Open Sans";
+  font-weight: normal;
+  text-transform: uppercase;
+}
+section#services p{
+  padding-left: 25%;
+  padding-right: 25%;
+  font-size: 14px;
+  font-family: "Open Sans";
+  letter-spacing: 1.2px;
+}
+p#last{
+  padding-bottom: 50px;
+}
+section#services ul{
+  font-family: "Open Sans";
+  letter-spacing: 1.2px;
+  font-size: 14px;
+  list-style-type: none;
+  text-align: left;
+  width: 100%;
+  text-align: center;
+}
+section#services a{
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+section#services a:hover{
+  text-decoration: underline;
+}
+
+@media(max-width: 1210px){
+  #showcase{
+      background:url('../img/showcase.jpg') no-repeat 0 0;
+  }
+
+@media(max-width: 850px){
+  section#sidebar input, section#sidebar textarea{
+    max-width: 100%;
+    min-width: 100%;
+    margin: 0 0 0 0;
+    padding: 5%;
+    margin-bottom: 20px;
+  }
+
+  section#sidebar textarea{
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  section#sidebar div label{
+    margin-left: 10px;
+  }
+
+.button_1 {
+    margin: 0 0 0 0;
+    width: 100%;
+  }
+
+ div#tos{
+   margin: 0 0 0 0;
+   width: 100%;
+ }
+
+}

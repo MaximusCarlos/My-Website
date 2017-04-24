@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Developer, Java, HTML, Best, Maximus Carlos">
+    <meta name="author" content="Maximus Carlos">
+    <title>Maximus | Contact</title>
+    <link rel="icon" href="../img/maximuscarlos_logo.png">
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <header>
+    <div class="container">
+        <nav>
+          <ul>
+            <li><a href="http://www.maximuscarlos.xyz">Home</a></li>
+            <li><a href="../index#about">About</a></li>
+            <li><a href="../index#services">Services</a></li>
+            <li class="current"><a href="#">Contact</a></li>
+            <li><a href="http://share.maximuscarlos.xyz">Project Send</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="askBelow">
+      <div class="container">
+        <h1>Contact Me</h1>
+        <p>If you have any questions or requests, please ask below.<br>Notice: Currently I'm not taking any work in as regards to web design / development.</p>
+        <p>__________________________________________________________________________________________________</p>
+      </div>
+    </section>
+
+    <script language="JavaScript">
+        var frmvalidator  = new Validator("contactMe");
+        frmvalidator.addValidation("name","req","Please provide your name");
+        frmvalidator.addValidation("reason","req","Please provide your email");
+        frmvalidator.addValidation("email","req","Please enter a valid email address");
+        frmvalidator.addValidation("message","req","Please provide a message");
+    </script>
+
+    <section id="sidebar">
+      <div class="dark_sidebar_contact">
+      <form method="post" name="contactMe" class="quote" action="../scripts/form_transmitter.php">
+        <div>
+          <label>Name*</label><br>
+          <input type="text" name="name">
+        </div>
+        <div>
+          <label>Reason for contacting*</label><br>
+          <input type="text" name="reason">
+        </div>
+        <div>
+          <label>Email, Discord or any other contact method*</label><br>
+          <input type="text" name="email">
+        </div>
+        <div>
+          <label>Message*</label><br>
+          <textarea name="message"></textarea>
+        </div>
+        <button class="button_1" type="submit" name="submit" value="submit">Submit</button>
+      </form>
+    </div>
+    </section>
+
+    <footer>
+      <p>Developed and maintained by &copy; 2017, Maximus Carlos. All Rights Reserved | <a href="contact"><b>Contact Email:</b></a> contact@maximuscarlos.xyz<br></p>
+    </footer>
+  </body>
+</html>
